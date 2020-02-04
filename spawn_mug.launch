@@ -1,0 +1,7 @@
+<launch>
+  <arg name="x" default="-2.37" />
+  <arg name="y" default="-6.14" />
+  <arg name="z" default="1.12" />
+  <node name="spawn_mug" pkg="gazebo_ros" type="spawn_model"
+        args="-sdf -database denden_mug_mountain -x $(arg x) -y $(arg y) -z $(arg z) -model mug" />
+</launch>
